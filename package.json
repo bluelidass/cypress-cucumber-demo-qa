@@ -1,0 +1,24 @@
+{
+  "name": "cypress-cucumber-demo-qa",
+  "version": "1.0.0",
+  "description": "cypress + cucumber test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bluelidass",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.10.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/e2e/steps/*.{cy.js,spec.js,js,ts}",
+      "cypress/e2e/steps/*/*.{cy.js,spec.js,js,ts}",
+      "cypress/support/*.{cy.js,js,ts}"
+    ]
+  }
+}
