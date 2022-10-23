@@ -17,6 +17,7 @@ module.exports = defineConfig({
 
       return config;
     },
+    projectId: "gbfmax",
     experimentalStudio: true,
     baseUrl: "https://demoqa.com",
     defaultCommandTimeout: 10000,
